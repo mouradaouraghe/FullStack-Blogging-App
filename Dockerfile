@@ -5,6 +5,6 @@ EXPOSE 8085
 ENV APP_HOME=/usr/src/app
 WORKDIR $APP_HOME
 
-COPY target/*.jar app.jar
+COPY target/*-SNAPSHOT.jar app.jar
 
 CMD ["java", "-jar", "app.jar"]
